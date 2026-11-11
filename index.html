@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+  >
+
+  <meta name="theme-color" content="#242424">
+
+  <meta
+    name="description"
+    content="Jeu d'échecs hors connexion contre Stockfish."
+  >
+
+  <title>Chess Offline</title>
+  <script type="module" crossorigin src="/assets/index-sx-iLY40.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CqnNrK8B.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="header">
+      <h1>♟ Chess Offline</h1>
+      <p>Jouez aux échecs sans Internet</p>
+    </header>
+
+    <section id="setup-panel" class="panel">
+
+      <h2>Nouvelle partie</h2>
+
+      <label for="player-color">
+        Choisir votre camp
+      </label>
+
+      <select id="player-color">
+        <option value="white">Blancs</option>
+        <option value="black">Noirs</option>
+      </select>
+
+      <label for="difficulty">
+        Difficulté de Stockfish
+      </label>
+
+      <select id="difficulty">
+        <option value="1">1 - Débutant</option>
+        <option value="2">2 - Amateur</option>
+        <option value="3">3 - Facile</option>
+        <option value="4">4 - Novice</option>
+        <option value="5">5 - Intermédiaire</option>
+        <option value="6">6 - Confirmé</option>
+        <option value="7" selected>7 - Avancé</option>
+        <option value="8">8 - Expert</option>
+        <option value="9">9 - Maître</option>
+        <option value="10">10 - Stockfish</option>
+      </select>
+
+      <button id="start-game">
+        Commencer la partie
+      </button>
+
+      <button id="resume-game" class="secondary" hidden>
+        Reprendre ma partie
+      </button>
+
+    </section>
+
+    <section id="game-panel" hidden>
+
+      <div id="game-status">
+        Préparation du jeu...
+      </div>
+
+      <div id="board"></div>
+
+      <div class="controls">
+
+        <button id="undo" disabled>
+          ↶ Retour
+        </button>
+
+        <button id="redo" disabled>
+          ↷ Avancer
+        </button>
+
+        <button id="restart">
+          Nouvelle partie
+        </button>
+
+        <button id="orientation">
+          Inverser le plateau
+        </button>
+
+      </div>
+
+      <section class="history-panel">
+
+        <h2>Historique des coups</h2>
+
+        <div id="move-history"></div>
+
+      </section>
+
+    </section>
+
+    <footer>
+      <p>Chessground · Chessops · Stockfish 19 WASM</p>
+      <p>Chess Offline — Jeu local</p>
+    </footer>
+
+  </main>
+
+
+</body>
+</html>

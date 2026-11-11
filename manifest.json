@@ -1,0 +1,11 @@
+
+{
+  "name": "Chess Offline",
+  "short_name": "Chess",
+  "description": "Jeu d'échecs hors connexion contre Stockfish",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#302e2b",
+  "theme_color": "#242424"
+}

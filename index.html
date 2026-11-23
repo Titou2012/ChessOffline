@@ -2,17 +2,21 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+  >
   <meta name="theme-color" content="#242424">
-  <meta name="description"
-        content="Jeu d'échecs hors connexion contre Stockfish">
+  <meta
+    name="description"
+    content="Jeu d'échecs hors connexion contre Stockfish."
+  >
 
   <title>Chess Offline</title>
 
   <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" href="./assets/index-CqnNrK8B.css">
   <script type="module" src="./assets/index-sx-iLY40.js"></script>
+  <link rel="stylesheet" href="./assets/index-CqnNrK8B.css">
 </head>
 
 <body>
@@ -78,7 +82,7 @@
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", () => {
         navigator.serviceWorker.register("./service-worker.js")
-          .catch(error => console.error("Service Worker :", error));
+          .catch(console.error);
       });
     }
   </script>
